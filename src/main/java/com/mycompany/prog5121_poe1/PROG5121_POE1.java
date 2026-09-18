@@ -2,10 +2,6 @@ package com.mycompany.prog5121_poe1;
 
 import java.util.Scanner;
 
-public class PROG5121_POE1 {package com.mycompany.prog5121_poe1;
-
-import java.util.Scanner;
-
 public class PROG5121_POE1 {
 
     public static void main(String[] args) {
@@ -43,7 +39,6 @@ public class PROG5121_POE1 {
         System.out.println();
         System.out.println(registrationResult);
 
-        // Only continue to login if registration was successful
         if (registrationResult.equals("User successfully registered.")) {
 
             System.out.println();
@@ -65,6 +60,4 @@ public class PROG5121_POE1 {
 
         input.close();
     }
-}
-
 }
