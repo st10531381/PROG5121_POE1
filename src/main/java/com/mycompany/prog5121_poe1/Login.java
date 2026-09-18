@@ -71,10 +71,10 @@ public String registerUser(String username, String password,
                 + "letter, a number, and a special character.";
     }
 
-    if (!checkCellPhoneNumber(cellPhoneNumber)) {
-        return "Cell phone number incorrectly formatted or does not contain "
-                + "international code.";
-    }
+   if (!checkCellPhoneNumber(cellPhoneNumber)) {
+    return "Cell number is incorrectly formatted or does not contain "
+            + "an international code; please correct the number and try again.";
+}
 
     this.username = username;
     this.password = password;

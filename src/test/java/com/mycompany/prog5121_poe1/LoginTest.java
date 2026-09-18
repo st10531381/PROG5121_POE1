@@ -193,9 +193,9 @@ public void testIncorrectCellPhoneMessage() {
     );
 
     assertEquals(
-            "Cell phone number incorrectly formatted or does not contain "
-            + "international code.",
-            result
-    );
+        "Cell number is incorrectly formatted or does not contain "
+        + "an international code; please correct the number and try again.",
+        result
+);
 }
 }
