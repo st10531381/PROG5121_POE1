@@ -49,10 +49,12 @@ public class Login {
                 && hasSpecialCharacter;
     }
 
-    // Checks for a South African international cell phone number
-    public boolean checkCellPhoneNumber(String cellPhoneNumber) {
-        return cellPhoneNumber.matches("^\\+27\\d{9}$");
-    }
+   // Checks for a South African international cell phone number.
+// Regular expression syntax adapted from Java Pattern documentation:
+// https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/regex/Pattern.html
+public boolean checkCellPhoneNumber(String cellPhoneNumber) {
+    return cellPhoneNumber.matches("^\\+27\\d{9}$");
+}
     // Registers the user if all details are correctly formatted
 public String registerUser(String username, String password,
         String cellPhoneNumber, String firstName, String lastName) {
