@@ -103,4 +103,9 @@ public String returnLoginStatus(String enteredUsername, String enteredPassword) 
 
     return "Username or password incorrect, please try again.";
 }
-}  
+
+    // Returns the registered first name (used by QuickChat as the sender)
+    public String getFirstName() {
+        return firstName;
+    }
+}
