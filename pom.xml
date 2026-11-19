@@ -36,4 +36,13 @@
         <maven.compiler.release>21</maven.compiler.release>
         <exec.mainClass>com.mycompany.prog5121_poe1.PROG5121_POE1</exec.mainClass>
     </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
